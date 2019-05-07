@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+
+	<script src="js/swiper.min.js"></script>
+</head>
+ <style>
+    html, body {
+		position: relative;
+		height: 100%;
+    }
+    body {
+		background: #eee;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color:#000;
+		margin: 0;
+		padding: 0;
+    }
+    .swiper-container {
+		width: 100%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    .swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+    }
+  </style>
+<body>
+<!-- 复用-header部分 -->
+		<div class="header">
+			<a href="" class="headaaa">
+				<img src="img/logo.jpg" alt="">
+			</a>
+			<p class="logo-box ">
+					<a class="login-btn" href="register.html">登录</a>|
+					<a class="reg-btn" href="/pass/reg.html">注册</a>
+			</p>
+			<ul class="quick-menu clearfix">
+				<li class="first-item">
+					<a href="/ucenter/myinfo.html" class="">我的安踏</a>|
+				</li>
+				<li>
+					<a href="http://www.anta.com" class="" target="_blank">品牌官网</a>|
+				</li>
+				<li class="mobile-btn">
+					<i class="icon icon-phone"></i>
+					<a href="http://m.anta.cn" class="" target="_blank"><i class="iconfont icon-shouji"></i>手机商城</a>|
+					<div class="mobile-shop hide" data-info="http://image03.anta.cn/sources/NewEdition/2015newimages/index_iqr.jpg"></div>
+				</li>
+				<li>
+					<a href="/tuan.shtml" class="c-red" style="color:#d00;">企业团购</a>|
+				</li>
+				<li>
+					<i class="icon icon-cart"></i>
+					<a href="/cart.html" class="" target="_blank"><i class="iconfont icon-gouwucheman"></i>购物车
+						<span class="cart-num">(0)</span>件
+					</a>
+				</li>
+			</ul>
+		</div>
+	
+	
+<!-- 顶部悬浮-nav-full部分 -->
+	<div class="nav-full">
+		<div class="bg">
+			<a  href="" title="查找所有商品分类" target="_blank" class="all-styles-title" id="aa">所有商品分类<img src="img/donw.jpg" alt=""></a>
+			<div class="goodscategory" id="goodscategory">
+				<div class="conceal_one con">
+					<h3><a href="">男鞋</a></h3>
+					<a href="">跑步鞋</a>
+					<a href="">篮球鞋</a>
+					<a href="">休闲鞋</a>
+					<a href="">板鞋</a></br>
+					<a href="">帆布鞋</a>
+					<a href="">足球鞋</a>
+					<a href="">保暖棉鞋</a></br>
+					<a href="">加大码鞋</a>
+					<a href="">2018新品</a>
+				</div>
+				<div class="conceal_two con">
+					<h3><a href="">女鞋</a></h3>
+					<a href="">跑步鞋</a>
+					<a href="">综训鞋</a>
+					<a href="">休闲鞋</a>
+					<a href="">板鞋</a></br>
+					<a href="">帆布鞋</a>
+					<a href="">2018新品</a>
+				</div>
+				<div class="conceal_three con">
+					<h3><a href="">男装</a></h3>
+					<a href="">卫衣/长T</a>
+					<a href="">棉服/羽绒服</a></br>
+					<a href="">运动长裤</a>
+					<a href="">T恤</a>
+					<a href="">帆布鞋</a></br>
+					<a href="">梭织外套</a>
+					<a href="">保暖棉鞋</a>
+					<a href="">加大码鞋</a>
+				   
+				</div>
+				<div class="conceal_for con">
+					<h3><a href="">女装</a></h3>
+					<a href="">羽绒服</a> 
+					<a href="">针织外套</a></br>
+					<a href="">运动bra</a>
+					<a href="">运动长裤</a>
+				</div>
+				<div class="conceal_five con">
+					<h3><a href="">童鞋</a></h3>
+					<a href="">男童鞋</a>
+					<a href="">女童鞋</a>
+					<a href="">男童装</a>
+					<a href="">女童装</a></br>
+					<a href="">跑步</a>
+					<a href="">篮球</a>
+					<a href="">足球</a>
+					<a href="">配件</a>
+				</div>
+				<div class="conceal_six con">
+					<h3><a href="">童鞋</a></h3>
+					<a href="">男袜</a>
+					<a href="">女袜</a>
+					<a href="">儿童袜</a>
+					<a href="">运动内裤</a></br>
+					<a href="">背包</a>
+					<a href="">篮球</a>
+					<a href="">足球</a>
+					<a href="">帽子</a>
+				</div>
+				
+			</div>
+			<div class="mull">
+				<a href="">首页</a><span>|</span>
+				<a href="" class="a1">跑步</a><span>|</span>
+				<a href="" class="a1">篮球</a><span>|</span>
+				<a href="" class="a1">足球</a><span>|</span>
+				<a href="" class="a1">健身</a><span>|</span>
+				<a href="" class="a1">休闲</a><span>|</span>
+				<a href="" class="a1">配件</a><span>|</span>
+				<a href="" class="a1">儿童</a><span>|</span>
+			</div>
+			<a href="" class="def-a">
+				<img src="img/uni_logo.jpg" alt="">
+			</a>
+			<div class="seek">
+				<div class="inpu">
+					<input type="text" name=""  class="inp">
+				</div>
+				<a href=""><i class="iconfont icon-ai219"></i></a>
+			</div>
+		</div>
+		<div class="conceal">
+			<div class="run a2" id="run">
+				<div class="running">
+					<img src="img/11735505.jpg" alt="">
+					<div class="parry"></div>
+					<div class="fon">
+						<div class="line">
+							<h3 class="line-p"><a href="">男子跑步</a></h3>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">跑步鞋</a><a href="">跑步服</a><a href="">加大跑鞋</a><a href="">女子跑鞋</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">女子跑鞋</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">跑步鞋</a><a href="">跑步服</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">新品推荐</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">跑步鞋</a><a href="">跑步服</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">优惠活动</a></h3>
+							</p>
+						</div>
+						<div class="red">
+							<a href="">关注官方微信领券满399减50</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boll a2">
+				<div class="running">
+					<img src="img/lanqiu1.jpg" alt="">
+					<div class="parry"></div>
+					<div class="fon">
+						<div class="line">
+							<h3 class="line-p"><a href="">篮球鞋</a></h3>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">加大码篮球鞋</a><a href="">篮球鞋</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">篮球服</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">上衣</a><a href="">裤子</a><a href="">套装/比赛服</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">新品推荐</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">儿童篮球系列</a><a href="">篮球新品</a><a href="">汤普森系列</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">优惠活动</a></h3>
+							</p>
+						</div>
+						<div class="red">
+							<a href="">关注官方微信领券满399减50</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footboll a2">
+				<div class="running">
+					<img src="img/11732203.jpg" alt="">
+					<div class="parry"></div>
+					<div class="fon">
+						<div class="line">
+							<h3 class="line-p"><a href="">足球鞋</a></h3>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">足球服</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">足球配件</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">新品推荐</a></h3>
+							</p>
+							
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">儿童篮球系列</a><a href="">篮球新品</a><a href="">汤普森系列</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">优惠活动</a></h3>
+							</p>
+						</div>
+						<div class="red">
+							<a href="">关注官方微信领券满399减50</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fitness a2">
+				<div class="running">
+					<img src="img/sz_0320.jpg" alt="">
+					<div class="parry"></div>
+					<div class="fon">
+						<div class="line">
+							<h3 class="line-p"><a href="">男子健身</a></h3>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">女子健身</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">新品推荐</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">儿童综训系列</a><a href="">健身新品</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">优惠活动</a></h3>
+							</p>
+						</div>
+						<div class="red">
+							<a href="">关注官方微信领券满399减50</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relaxation a2">
+				<div class="running">
+					<img src="img/91738880.jpg" alt="">
+					<div class="parry"></div>
+					<div class="fon">
+						<div class="line">
+							<h3 class="line-p"><a href="">男子生活</a></h3>
+						</div>
+						<div class="line">
+							<div class="sty">
+								<p><span>鞋：</span><a href="">休闲鞋</a><a href="">板鞋</a><a href="">帆布硫化鞋</a></p>
+								<p><span>服：</span><a href="">衣服</a><a href="">裤子</a></p>
+							</div>
+							<p class="line-p">
+								<h3><a href="">女子生活</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<div class="sty">
+								<p><span>鞋：</span><a href="">休闲鞋</a><a href="">板鞋</a><a href="">帆布硫化鞋</a></p>
+								<p><span>服：</span><a href="">衣服</a><a href="">裤子</a></p>
+							</div>
+							<p class="line-p">
+								<h3><a href="">新品推荐</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">儿童生活系列</a><a href="">生活系列新品</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">优惠活动</a></h3>
+							</p>
+						</div>
+						<div class="red">
+							<a href="">关注官方微信领券满399减50</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accessories a2">
+				<div class="running">
+					<img src="img/pj_1013.jpg" alt="">
+					<div class="parry"></div>
+					<div class="fon">
+						<div class="line">
+							<h3 class="line-p"><a href="">运动袜</a></h3>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">运动内裤</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">篮球/足球</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">运动包包</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">新品推荐</a></h3>
+							</p>
+							
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">儿童配件</a><a href="">配件新品</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">优惠活动</a></h3>
+							</p>
+						</div>
+						<div class="red">
+							<a href="">关注官方微信领券满399减50</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="child a2">
+				<div class="running">
+					<img src="img/et_1013.jpg" alt="">
+					<div class="parry"></div>
+					<div class="fon">
+						<div class="line">
+							<h3 class="line-p"><a href="">童鞋</a></h3>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">男童鞋</a><a href="">女童鞋</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">童装</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">男童装</a><a href="">女童装</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">配件</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<h3><a href="">新品推荐</a></h3>
+							</p>
+						</div>
+						<div class="line">
+							<p class="line-p">
+								<a href="">儿童配件</a><a href="">配件新品</a>
+							</p>
+							<p class="line-p">
+								<h3><a href="">优惠活动</a></h3>
+							</p>
+						</div>
+						<div class="red">
+							<a href="">关注官方微信领券满399减50</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+<!-- 轮播图-banner部分 -->	
+	<div class="ban-img">
+		<div class="banne" id="banne">
+			
+		</div>
+		<img src="img/banner_l.png" alt="" class="banne-left" id="banne-left">
+		<img src="img/banner_r.png" alt="" class="banne-right" id="banne-right">
+	</div>
+	<div class="ban">
+		<span class="ban-btn">可乐联名活动</span>
+		<span class="ban-btn">放肆街头</span>
+		<span class="ban-btn">新款气垫</span>
+		<span class="ban-btn">KT4定制</span>
+	</div>
+
+<!-- 图片展示部分 -->
+	<div class="nav_one">
+		<div class="nav_one_top">
+			<div class="tex">
+				<a class="box1 boxbox"></a>
+				<div class="show showshow">
+					<div class="conn"><div class="content">立即选购</div></div>
+				</div>
+				<div class="text">
+					<h4 class="a_p"><a href="">篮球明星战靴</a></h4>
+					<div class="smolltext">
+						<a href="">汤普森四代</a>|<a href="">要疯系类</a>|<a href="">篮球鞋服</a>
+					</div>
+				</div>
+			</div>
+			<div class="tex">
+				<a class="box2 boxbox"></a>
+				<div class="show showshow">
+					<div class="conn"><div class="content">立即选购</div></div>
+				</div>
+				<div class="text">
+					<h4 class="a_p"><a href="">跑步系列</a></h4>
+					<div class="smolltext">
+						<a href="">闪能科技跑鞋</a>|<a href="">夏季新款</a>|<a href="">舒适气垫</a>|<a href="">跑步鞋服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav_one_bot">
+			<div class="tex-three">
+				<a class="box3 boxbox"></a>
+				<div class="show3 showshow">
+					<div class="conn"><div class="content">立即选购</div></div>
+				</div>
+				<div class="text">
+					<h4 class="a_p"><a href="">篮球明星战靴</a></h4>
+				</div>
+			</div>
+			<div class="tex-three tex-th">
+				<a class="box3-1 boxbox"></a>
+				<div class="show3 showshow">
+					<div class="conn"><div class="content">立即选购</div></div>
+				</div>
+				<div class="text">
+					<h4 class="a_p"><a href="">篮球明星战靴</a></h4>
+				</div>
+			</div>
+			<div class="tex-three">
+				<a class="box3-2 boxbox"></a>
+				<div class="show3 showshow">
+					<div class="conn"><div class="content">立即选购</div></div>
+				</div>
+				<div class="text">
+					<h4 class="a_p"><a href="">篮球明星战靴</a></h4>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="nav_two">
+		<div class="tb">
+			<p>A-FLASHFOAM闪能科技</p>
+			<p class="pps">轻量化EVA高回弹复合材料，安踏自主研发，为跑着提供充足动力。</p>
+			<div class="tow_banner">
+				<div class="tow_banner_left">
+					<div class="bannerban">
+						 <!-- Swiper -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper" id="swiper_wrap">
+								<div class="swiper-slide"><img class="imgs" src="img/583-406-1.jpg" alt=""></div>
+								<div class="swiper-slide"><img class="imgs" src="img/583-406-3.jpg" alt=""></div>
+								<div class="swiper-slide"><img class="imgs" src="img/583-406-5.jpg" alt=""></div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination">
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next" id="rightright"></div>
+							<div class="swiper-button-prev" id="leftleft"></div>
+						</div>
+					</div>
+					<div class="pp">
+						<p class="p_big p-big-left">KT篮球鞋</p>
+						<p class="p_smoll p-big-left">2019新款KT篮球鞋</p>
+						<div class="bor">
+							<a href="" class="aas">立刻购买</a>
+							<div class="trans"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="tow_banner_right">
+					<div class="bannerban">
+						 <!-- Swiper -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper" id="wrapper_swiper">
+								<div class="swiper-slide"><img src="img/583-406-2.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="img/583-406-4.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="img/583-406-2-3.jpg" alt=""></div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination">
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next" id="right1"></div>
+							<div class="swiper-button-prev" id="left1"></div>
+						</div>
+					</div>
+					<div class="pp">
+						<p class="p_big p-big-right">A-SPORTS 春上新</p>
+						<p class="p_smoll p-big-right">新升级运动面料、轻质有型，让你运动中激发潜能，提升运动表现。</p>
+						<div class="bor">
+							<a href="" class="aas">立刻购买</a>
+							<div class="trans"></div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+		
+		<div class="imgs">
+			<div class="divdiv">
+				<div class="imgsimgs">
+					<div class="bigImg">
+					</div>
+					<div class="smollImg">
+						<img src="img/2-left.jpg" alt="" class="smollImg_img">
+						<div class="showImg">
+							<img src="img/11821166_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/11821166_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/11821166_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/11821166_4_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/11821166_5_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/11821166_6_01--w_288_h_288.jpg" alt="" class="imgsss">
+						</div>
+						<img src="img/2-right.jpg" alt="" class="smollImg_img">
+					</div>
+					<div class="imgText">
+						<p class="p_text">篮球鞋男汤普森KT3轻骑兵3代a-shock低帮运动球鞋</p>
+						<p class="money">￥<span class="sp">5498</span></p>
+					</div>
+					<div class="jjj">
+						<div class="hhh">
+						</div>
+						<div class="nnn">立即选购</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="divdiv">
+
+			<div class="imgsimgs">
+				<div class="bigImg">
+				</div>
+				<div class="smollImg">
+					<img src="img/2-left.jpg" alt="" class="smollImg_img">
+					<div class="showImg">
+						<img src="img/11911101_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11911101_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11911101_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11911101_3_01--w_288_h_288 (1).jpg" alt="" class="imgsss">
+					</div>
+					<img src="img/2-right.jpg" alt="" class="smollImg_img">
+				</div>
+				<div class="imgText">
+					<p class="p_text">篮球鞋高帮UFO2代-天体战靴</p>
+					<p class="money">￥<span class="sp">523</span></p>
+				</div>
+				<div class="jjj">
+					<div class="hhh">
+					</div>
+					<div class="nnn">立即选购</div>
+				</div>
+			</div>
+			</div>
+			<div class="divdiv">
+
+			<div class="imgsimgs">
+				<div class="bigImg">
+				</div>
+				<div class="smollImg">
+					<img src="img/2-left.jpg" alt="" class="smollImg_img">
+					<div class="showImg">
+						<img src="img/11911603_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11911603_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11911603_7_01--w_288_h_288.jpg" alt="" class="imgsss">
+					</div>
+					<img src="img/2-right.jpg" alt="" class="smollImg_img">
+				</div>
+				<div class="imgText">
+					<p class="p_text">汤普森4代战靴KT4鸳鸯新款球鞋运动鞋男
+</p>
+					<p class="money">￥<span class="sp">699</span></p>
+				</div>
+				<div class="jjj">
+					<div class="hhh">
+					</div>
+					<div class="nnn">立即选购</div>
+				</div>
+			</div>
+			</div>
+			<div class="divdiv">
+
+			<div class="imgsimgs">
+				<div class="bigImg">
+				</div>
+				<div class="smollImg">
+					<img src="img/2-left.jpg" alt="" class="smollImg_img">
+					<div class="showImg">
+						<img src="img/95929146_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/95929146_2_01--w_288_h_288.jpg alt="" class="imgsss">
+						<img src="img/95929146_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+					</div>
+					<img src="img/2-right.jpg" alt="" class="smollImg_img">
+				</div>
+				<div class="imgText">
+					<p class="p_text">篮球鞋高帮要疯2代球鞋男</p>
+					<p class="money">￥<span class="sp">299</span></p>
+				</div>
+				<div class="jjj">
+					<div class="hhh">
+					</div>
+					<div class="nnn">立即选购</div>
+				</div>
+			</div>
+			</div>
+			<div class="divdiv">
+			<div class="imgsimgs">
+				<div class="bigImg">
+				</div>
+				<div class="smollImg">
+					<img src="img/2-left.jpg" alt="" class="smollImg_img">
+					<div class="showImg">
+						<img src="img/95929142_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/95929142_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/95929142_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/95929142_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+
+					</div>
+					<img src="img/2-right.jpg" alt="" class="smollImg_img">
+				</div>
+				<div class="imgText">
+					<p class="p_text">短袖针织衫</p>
+					<p class="money">￥<span class="sp">99</span></p>
+				</div>
+				<div class="jjj">
+					<div class="hhh">
+					</div>
+					<div class="nnn">立即选购</div>
+				</div>
+			</div>
+			</div>
+			<div class="divdiv">
+			<div class="imgsimgs">
+				<div class="bigImg">
+				</div>
+				<div class="smollImg">
+					<img src="img/2-left.jpg" alt="" class="smollImg_img">
+					<div class="showImg">
+						<img src="img/95928303_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/95928303_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/95928303_4_01--w_288_h_288.jpg" alt="" class="imgsss">
+					</div>
+					<img src="img/2-right.jpg" alt="" class="smollImg_img">
+				</div>
+				<div class="imgText">
+					<p class="p_text">短袖针织衫</p>
+					<p class="money">￥<span class="sp">119</span></p>
+				</div>
+				<div class="jjj">
+					<div class="hhh">
+					</div>
+					<div class="nnn">立即选购</div>
+				</div>
+			</div>
+			</div>
+			<div class="divdiv">
+			<div class="imgsimgs">
+				<div class="bigImg">
+				</div>
+				<div class="smollImg">
+					<img src="img/2-left.jpg" alt="" class="smollImg_img">
+					<div class="showImg">
+						<img src="img/11841304_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11841304_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11841304_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11841304_4_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11841304_5_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/11841304_6_01--w_288_h_288.jpg" alt="" class="imgsss">
+					</div>
+					<img src="img/2-right.jpg" alt="" class="smollImg_img">
+				</div>
+				<div class="imgText">
+					<p class="p_text">女鞋运动鞋2019新款粉鞋小白鞋春季跑鞋子女休闲鞋</p>
+					<p class="money">￥<span class="sp">259</span></p>
+				</div>
+				<div class="jjj">
+					<div class="hhh">
+					</div>
+					<div class="nnn">立即选购</div>
+				</div>
+			</div>
+			</div>
+			<div class="divdiv">
+			<div class="imgsimgs">
+				<div class="bigImg">
+				</div>
+				<div class="smollImg">
+					<img src="img/2-left.jpg" alt="" class="smollImg_img">
+					<div class="showImg">
+						<img src="img/92918880_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/92918880_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+						<img src="img/92625512_4_01--w_288_h_288.jpg" alt="" class="imgsss">
+					</div>
+					<img src="img/2-right.jpg" alt="" class="smollImg_img">
+				</div>
+				<div class="imgText">
+					<p class="p_text">板鞋</p>
+					<p class="money">￥<span class="sp">139</span></p>
+				</div>
+				<div class="jjj">
+					<div class="hhh">
+					</div>
+					<div class="nnn">立即选购</div>
+				</div>
+			</div>
+			</div>
+			<div class="divdiv">
+				<div class="imgsimgs">
+					<div class="bigImg">
+					</div>
+					<div class="smollImg">
+						<img src="img/2-left.jpg" alt="" class="smollImg_img">
+						<div class="showImg">
+							<img src="img/92918000_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/92918000_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/92918000_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+						</div>
+						<img src="img/2-right.jpg" alt="" class="smollImg_img">
+					</div>
+					<div class="imgText">
+						<p class="p_text">不羁运动鞋男鞋2019新鞋春季学生男士潮流复古老爹鞋休闲鞋</p>
+						<p class="money">￥<span class="sp">299</span></p>
+					</div>
+					<div class="jjj">
+						<div class="hhh">
+						</div>
+						<div class="nnn">立即选购</div>
+					</div>
+				</div>
+			</div>
+			<div class="divdiv">
+				<div class="imgsimgs">
+					<div class="bigImg">
+					</div>
+					<div class="smollImg">
+						<img src="img/2-left.jpg" alt="" class="smollImg_img">
+						<div class="showImg">
+							<img src="img/91918802_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/91918802_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/91918802_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/91918802_4_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/91918802_6_01--w_288_h_288.jpg" alt="" class="imgsss">
+						</div>
+						<img src="img/2-right.jpg" alt="" class="smollImg_img">
+					</div>
+					<div class="imgText">
+						<p class="p_text">篮球鞋UFO2代-异形高帮战靴实战球鞋</p>
+						<p class="money">￥<span class="sp">499</span></p>
+					</div>
+					<div class="jjj">
+						<div class="hhh">
+						</div>
+						<div class="nnn">立即选购</div>
+					</div>
+				</div>
+			</div>
+			<div class="divdiv">
+				<div class="imgsimgs">
+					<div class="bigImg">
+					</div>
+					<div class="smollImg">
+						<img src="img/2-left.jpg" alt="" class="smollImg_img">
+						<div class="showImg">
+							<img src="img/92625512_5_01--w_288_h_288 (1).jpg" alt="" class="imgsss">
+							<img src="img/92625512_9_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/92625512_5_01--w_288_h_288 (2).jpg" alt="" class="imgsss">
+							<img src="img/92625512_7_01--w_288_h_288 (1).jpg" alt="" class="imgsss">
+							<img src="img/92625512_9_01--w_288_h_288 (1).jpg" alt="" class="imgsss">
+							<img src="img/92625512_9_01--w_288_h_288 (1).jpg" alt="" class="imgsss">
+							<img src="img/92625512_9_01--w_288_h_288 (1).jpg" alt="" class="imgsss">
+						</div>
+						<img src="img/2-right.jpg" alt="" class="smollImg_img">
+					</div>
+					<div class="imgText">
+						<p class="p_text">女鞋跑步鞋2019春季新款正品网面透气休闲鞋运动鞋女</p>
+						<p class="money">￥<span class="sp">169</span></p>
+					</div>
+					<div class="jjj">
+						<div class="hhh">
+						</div>
+						<div class="nnn">立即选购</div>
+					</div>
+				</div>
+			</div>
+			<div class="divdiv">
+				<div class="imgsimgs">
+					<div class="bigImg">
+					</div>
+					<div class="smollImg">
+						<img src="img/2-left.jpg" alt="" class="smollImg_img">
+						<div class="showImg">
+							<img src="img/92918860_1_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/92918860_2_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/92918860_3_01--w_288_h_288.jpg" alt="" class="imgsss">
+							<img src="img/92918860_5_01--w_288_h_288.jpg" alt="" class="imgsss">
+						</div>
+						<img src="img/2-right.jpg" alt="" class="smollImg_img">
+					</div>
+					<div class="imgText">
+						<p class="p_text">女鞋运动鞋2019新款粉鞋小白鞋春季跑鞋子女休闲鞋</p>
+						<p class="money">￥<span class="sp">259</span></p>
+					</div>
+					<div class="jjj">
+						<div class="hhh">
+						</div>
+						<div class="nnn">立即选购</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="moreGoods">
+			<a href="">选购更多商品 》</a>
+			<p class="ppsppps"></p>
+		</div>
+	</div>
+	
+<!-- 分割线 -->
+	<div class="hr"></div>
+	
+	
+<!-- footer部分-复用 -->
+	<div class="footer">
+		<div class="foot_one">
+			<ul class="uls">
+				<li class="lif">用户指南</li>
+				<li>新用户注册</li>
+				<li>购物流程</li>
+				<li>尺码对照表</li>
+				<li>支付方式</li>
+				<li>包装形成</li>
+				<li>配送方式</li>
+				<li>配送费用</li>
+			</ul>
+			<ul class="uls">
+				<li>会员政策</li>
+				<li>积分政策</li>
+				<li>会员政策</li>
+				<li>用户协议</li>
+				<li>发票制度</li>
+			</ul>
+			<ul class="uls">
+				<li>售后服务</li>
+				<li>订单查询</li>
+				<li>快递查询</li>
+				<li>退换货政策</li>
+				<li>退换货流程</li>
+				<li>退款方式</li>
+			</ul>
+			<ul class="uls">
+				<li>联系我们</li>
+				<li>企业团购</li>
+				<li>商务合作</li>
+			</ul>
+		</div>
+		<div class="foot_two">
+			
+		</div>
+		<div class="foot_one">
+			<div class="footRight-one">在线咨询</div>
+			<div class="footRight-two">400-825-2020</div>
+			<div class="footRight-three">
+				<img src="img/2hhh.jpg" alt="">
+			</div>
+			<div class="footRight-four">微信咨询</div>
+			<div class="footRight-five">
+				<img src="img/3hhh.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	
+	<div class="foot">
+		<p>
+			<span>COPYRIGHT 2012-2019</span>
+			<span>厦门安踏电子商务有限公司</span>
+			<i class="icon icon-jingchaju"></i>
+			<span>闽ICP备11020421号</span>
+		</p>
+		<p>
+			<a href="">营业执照 </a>
+			<a href="">开户许可证</a>
+			<a href="">网站地图</a>
+			<a href="">标签</a>
+			<a href="">友情链接</a>
+		</p>
+
+	</div>
+	
+<!-- 右边栏 -->
+	<div id="boxRight" class="boxRight">
+		<div class="yemian"></div>
+		<div class="grey"></div>
+		
+	</div>
+</body>
+</html>
+  <script>
+	  
+    var swiper = new Swiper('.swiper-container', {
+		
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	
+	
+  </script>
